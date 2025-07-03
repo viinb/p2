@@ -1,0 +1,78 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Comic Sans MS";
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    margin: 16px;
+    padding: 16px;
+    background-color: rgb(255, 128, 213);
+    text-align: center;
+    border-radius: 20px;
+}
+
+article h1 {
+    color: rgb(255, 255, 24);
+}
+
+article {
+    margin: 16px;
+    padding: 16px;
+    background-color: rgb(255, 128, 213);
+    
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#texto p {   
+    width: 50%;  
+    padding-top: 1%;
+}
+
+
+#img {
+    align-content: center;
+}
+
+#img img {   
+    width: 10vh;  
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    gap: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+#menu a{
+    color: rgb(255, 255, 24);
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    width: 32px;
+}
