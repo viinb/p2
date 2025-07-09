@@ -1,78 +1,92 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    font-family: "Comic Sans MS";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+  font-family: "Comic Sans MS";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+
+/* Header */
 
 header {
-    margin: 16px;
-    padding: 16px;
-    background-color: rgb(255, 128, 213);
-    text-align: center;
-    border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 15px;
 }
 
-article h1 {
-    color: rgb(255, 255, 24);
+.navbar {
+  display: flex;
 }
 
-article {
-    margin: 16px;
-    padding: 16px;
-    background-color: rgb(255, 128, 213);
-    
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-
-    display: flex;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
 }
 
-#texto {
-    display: flex;
-    flex-direction: column;
+/* Main */
+
+.main {
+  display: flex;
+  flex: 1;
 }
 
+/* Sobre */
 
-#texto p {   
-    width: 50%;  
-    padding-top: 1%;
+.sobre {
+  flex: 2;
+  background: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-
-#img {
-    align-content: center;
+.sobre img {
+  margin: 10px 0;
+  max-width: 100%;
 }
 
-#img img {   
-    width: 10vh;  
+/* Curiosidade */
+
+.curiosidade {
+  flex: 1;
+  background: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-#menu {
-    display: flex;
-    justify-content: center;
+.curiosidade img {
+  margin: 10px 0;
+  max-width: 100%;
 }
 
-#menu ul {
-    display: flex;
-    list-style: none;
-    gap: 120px;
-    padding: 0;
-    margin: 0;
-}
-
-#menu a{
-    color: rgb(255, 255, 24);
-}
+/* Footer */
 
 footer {
-    text-align: center;
-    color: white;
+  display: flex;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+footer div, footer a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 footer img {
-    width: 32px;
+  height: 48px;
+  width: 48px;
 }
