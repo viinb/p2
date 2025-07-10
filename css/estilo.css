@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo padrão das caixas */
+.header,
+.main,
+.sobre,
+.curiosidade,
+.footer {
+    background: black;
+    border: 4px solid white;
+    color: white;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    margin-right: 8px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+/* Main */
+
+.main {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Seção SOBRE */
+
+.sobre {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sobre-topo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobre-topo h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+}
+
+.imagem-grande {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-grande img {
+    max-width: 90%;
+}
+
+.sobre-rodape {
+    font-size: 14px;
+    color: white;
+}
+
+/* Seção CURIOSIDADE */
+
+.curiosidade {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.curiosidade-topo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curiosidade-topo h2 {
+    font-size: 18px;
+}
+
+.curiosidade-topo p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.imagem-curiosidade {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-curiosidade img {
+    max-width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.footer .copyright {
+    font-size: 16px;
+    color: white;
+}
+
+.links-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links-footer a img {
+    height: 32px;
+}
+
+.links-footer a {
+    text-decoration: none;
+}
+
+/* Corrige cor de texto e link em todas as tags */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
